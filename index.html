@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ибраим Солтонбаев - Онлайн Резюме</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <nav id="nav-bar-spy" class="nav-bar">
+          <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
+            <li class="nav-bar__item"><a href="#section-1"></a></li>
+            <li class="nav-bar__item"><a href="#section-2"></a></li>
+            <li class="nav-bar__item"><a href="#section-3"></a></li>
+            <li class="nav-bar__item"><a href="#section-4"></a></li>
+            <li class="nav-bar__item"><a href="#section-5"></a></li>
+          </ul>
+          <!-- <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
+            <li class=""><a href="#section-1"></a></li>
+            <li class=""><a href="#section-2"></a></li>
+            <li class=""><a href="#section-3"></a></li>
+            <li class=""><a href="#section-4"></a></li>
+            <li class=""><a href="#section-5"></a></li>
+          </ul> -->
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <div
+        class="content-container"
+        data-spy="scroll"
+        data-target="#nav-bar-spy"
+      >
+        <section
+          id="section-1"
+          data-aos="zoom-out"
+          class="welcome content__section pg-1"
+        >
+          <div class="section-container">
+            <div class="column">
+              <div class="h1-container">
+                <h1 class="section-title content__title">Привет,</h1>
+              </div>
+              <div class="fadeInName">Меня зовут Ибраим.</div>
+              <span class="create-wrapper"
+                ><span class="fadeInI">Я </span
+                ><span class="fadeInLove">люблю </span
+                ><span class="fadeInCreate">создавать</span></span
+              >
+
+              <div class="fadeInDigital">цифровые впечатления</div>
+              <span class="fadeInTools highlight-container"
+                >используя <span class="highlight"> CSS, HTML и JS </span></span
+              >
+            </div>
+            <div class="column">
+              <img class="selfie-img" src="./images/selfie.png" alt="" />
+            </div>
+
+            <!-- <p class="section__p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              voluptas quibusdam corrupti id modi deleniti nemo vitae laboriosam
+              nam ducimus? Perferendis mollitia, natus quae libero explicabo aut
+              ratione. Sequi incidunt autem obcaecati ea dolorem omnis illo
+              exercitationem adipisci, excepturi culpa error? Aut inventore
+              minus doloribus magni, sit modi consequatur ipsum.
+            </p> -->
+          </div>
+        </section>
+        <section id="section-2" class="my-story content__section pg-2">
+          <div class="section-container">
+            <h1 class="section-title content__title">Моя история</h1>
+            <p class="section__p">
+              Мой путь в IT был тернистым и долгим. Сначала был универ по
+              верстке, затем степень по теории музыки и классу фортепиано.
+              Наконец - карьера длиной в в 10 лет в ювелирной индустрии, где я
+              освоил все аспекты ювелирного мастерства. <br /><br />
+              Но параллельно меня всегда интересовали возможности IT и те
+              преимущества какие он дают. Начал я как веб-мастер для моей
+              компании, где мне приходилось обслуживать сайт, паралельно
+              осваивая CSS, HTML, Liquid Template Language и немного Javascript
+            </p>
+          </div>
+        </section>
+        <section id="section-3" class="my-skills content__section pg-3">
+          <div class="section-container">
+            <div class="column-1">
+              <h1 class="section-title content__title">Навыки</h1>
+              <p class="section__p">
+                Весь опыт полученный мною из того что я делал позволяет мне
+                успешно воплощать мои идеи в програмированнии.<br /><br />
+
+                Из изучения теории музыки я получил навык работы со сложными
+                абстрактными обьектами. От изучения верстки - чувство пропорции
+                и дизайна. Из ювелирного мастерства - способность
+                концентрироваться на деталях в течении многих часов.
+              </p>
+            </div>
+            <div class="column-2">
+              <div class="skills-wrapper">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+                <div class="skills-container">
+                  <h2>Что и насколько я умею</h2>
+                  <div class="skills">
+                    <div class="details">
+                      <span>HTML</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="html-bar"></div>
+                    </div>
+                  </div>
+                  <div class="skills">
+                    <div class="details">
+                      <span>CSS</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="css-bar"></div>
+                    </div>
+                  </div>
+                  <div class="skills">
+                    <div class="details">
+                      <span>Javascript</span>
+                      <span>30%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="js-bar"></div>
+                    </div>
+                  </div>
+                  <div class="skills">
+                    <div class="details">
+                      <span>Liquid</span>
+                      <span>50%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="jQuery-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="section-4"
+          class="portfolio portfolio-bg content__section pg-4"
+        >
+          <div class="section-container">
+             
+
+            <h1 class="section-title content__title">Проекты</h1>
+            <p class="section__p">над которым я работал solo или в команде</p>
+            <div class="portfolio-cards">
+              <div class="portfolio-bg"></div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover1">
+                <p class="portfolio-cards__title">Концепт проект для Rimowa</p>
+                <p class="portfolio-cards__desc">
+                  Система обработки заказов для известного производителя
+                  чемоданов Rimowa
+                </p>
+              </div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover2">
+                <p class="portfolio-cards__title">Jazz Trainer Web App</p>
+                <p class="portfolio-cards__desc">
+                  Онлайн тренажер по джазовой гармонии
+                </p>
+              </div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover3">
+                <p class="portfolio-cards__title">
+                  Персональный сайт soltonbaev.com
+                </p>
+                <p class="portfolio-cards__desc">
+                  Мой личный сайт основанный на быстром движке Grav
+                </p>
+              </div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover4">
+                <p class="portfolio-cards__title">Макеты Figma</p>
+                <p class="portfolio-cards__desc">
+                  Верстка макетов Figma в составе Maker's bootcamp
+                </p>
+              </div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover5">
+                <p class="portfolio-cards__title">Адаптация тем Shopify</p>
+                <p class="portfolio-cards__desc">
+                  Адаптация коммерческой темы Shopify 2.0 для ювелирного
+                  магазина alexsoldier.com
+                </p>
+              </div>
+              <div class="portfolio-cards__item portfolio-cards__item_hover6">
+                <p class="portfolio-cards__title">SEO оптимизация</p>
+                <p class="portfolio-cards__desc">
+                  SEO оптимизация электронного магазина и доведения его до
+                  GTmetrix 92 балльной оценки
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section-5" class="my-hobbies content__section pg-5">
+          <div class="section-container">
+            <div>
+              <h1 class="section-title content__title">Увлечения</h1>
+              <p class="section__p">
+                Помимо печатания кодов на клавиатуре, у меня есть следующие
+                увлечения:
+              </p>
+            </div>
+            <div class="my-hobbies__list-wrapper">
+              <div class="my-hobbies__img-wrapper">
+                <img src="./images/cosmonavt.png" alt="" />
+              </div>
+              <ul class="my-hobbies__list">
+                <li class="my-hobbies__item">
+                  Читать книги (в основном non-fiction литературу)
+                </li>
+                <li class="my-hobbies__item">
+                  Слушать и заниматься музыкой (игра на клавиатуре и гитаре
+                </li>
+                <li class="my-hobbies__item">
+                  Читатъ и писать в онлайн ресурс quora.com
+                </li>
+                <li class="my-hobbies__item">Проводить время с дочерью</li>
+                <li class="my-hobbies__item">Делать прогулки на природе</li>
+                <li class="my-hobbies__item">Делать вылазки с друзьями</li>
+              </ul>
+            </div>
+            <footer class="footer">
+              <div class="footer-container">
+                <div>&copy designed and created by Ибраим Солтонбаев</div>
+                <div>Найди меня на <a href="github.com">Github.io</a></div>
+                <div>
+                  Мой официальный сайт
+                  <a href="https://soltonbaev.com">soltonbaev.com</a>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+
+      // let image = document.getElementsByTagName("img");
+
+      // document.getElementsByClassName(
+      //   ".portfolio-cards__item_hover1"
+      // ).onmouseover = function () {
+      //   image.src = "http://via.placeholder.com/100/00ff00";
+      // };
+
+      // document.getElementsByClassName(
+      //   ".portfolio-cards__item_hover2"
+      // ).onmouseover = function () {
+      //   image.src = "http://via.placeholder.com/100/ff0000";
+      // };
+
+      // document.getElementsByClassName(
+      //   ".portfolio-cards__item_hover3"
+      // ).onmouseover = function () {
+      //   image.src = "http://via.placeholder.com/100/ffa500";
+      // };
+
+      $(".portfolio-cards__item_hover1").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg1");
+      });
+      $(".portfolio-cards__item_hover2").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg2");
+      });
+      $(".portfolio-cards__item_hover3").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg3");
+      });
+      $(".portfolio-cards__item_hover4").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg4");
+      });
+      $(".portfolio-cards__item_hover5").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg5");
+      });
+      $(".portfolio-cards__item_hover6").hover(function () {
+        $(".portfolio-bg").toggleClass("portfolio-bg1");
+      });
+    </script>
+  </body>
+</html>
