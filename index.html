@@ -8,7 +8,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/variables.css" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>Ибраим Солтонбаев - Онлайн Резюме</title>
   </head>
@@ -17,68 +18,63 @@
       <div class="header-container">
         <nav id="nav-bar-spy" class="nav-bar">
           <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
-            <li class="nav-bar__item"><a href="#section-1"></a></li>
-            <li class="nav-bar__item"><a href="#section-2"></a></li>
-            <li class="nav-bar__item"><a href="#section-3"></a></li>
-            <li class="nav-bar__item"><a href="#section-4"></a></li>
-            <li class="nav-bar__item"><a href="#section-5"></a></li>
+            <li class="nav-bar__item"><a href="#welcome"></a></li>
+            <li class="nav-bar__item"><a href="#my-story"></a></li>
+            <li class="nav-bar__item"><a href="#my-skills"></a></li>
+            <li class="nav-bar__item"><a href="#portfolio"></a></li>
+            <li class="nav-bar__item"><a href="#my-hobbies"></a></li>
           </ul>
-          <!-- <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
-            <li class=""><a href="#section-1"></a></li>
-            <li class=""><a href="#section-2"></a></li>
-            <li class=""><a href="#section-3"></a></li>
-            <li class=""><a href="#section-4"></a></li>
-            <li class=""><a href="#section-5"></a></li>
-          </ul> -->
         </nav>
       </div>
     </header>
     <main class="content">
       <div
-        class="content-container"
+        class="content__container"
         data-spy="scroll"
         data-target="#nav-bar-spy"
       >
         <section
-          id="section-1"
+          id="welcome"
           data-aos="zoom-out"
-          class="welcome content__section pg-1"
+          class="welcome content__section animateGradientBG"
         >
-          <div class="section-container">
-            <div class="column">
-              <div class="h1-container">
-                <h1 class="section-title content__title">Привет,</h1>
-              </div>
-              <div class="fadeInName">Меня зовут Ибраим.</div>
-              <span class="create-wrapper"
-                ><span class="fadeInI">Я </span
-                ><span class="fadeInLove">люблю </span
-                ><span class="fadeInCreate">создавать</span></span
+          <div class="welcome__container section-container">
+            <div class="welcome__column welcome__column_txt">
+              <span class="section-title welcome__title typingAnimation">
+                Привет,
+              </span>
+
+              <span class="welcome__name fadeIn">меня зовут Ибраим.</span>
+              <span class="welcome__create-wrapper"
+                ><span class="welcome__I fadeIn">Я </span
+                ><span class="welcome__love fadeIn">люблю </span
+                ><span class="welcome__create fadeIn">создавать</span></span
               >
 
-              <div class="fadeInDigital">цифровые впечатления</div>
-              <span class="fadeInTools highlight-container"
-                >используя <span class="highlight"> CSS, HTML и JS </span></span
+              <span class="welcome__impressions fadeIn">
+                цифровые <br />
+                впечатления
+              </span>
+              <span class="welcome__tools fadeIn"
+                >используя
+                <span class="welcome__tools_highlight">
+                  CSS, HTML и JS
+                </span></span
               >
             </div>
-            <div class="column">
-              <img class="selfie-img" src="./images/selfie.png" alt="" />
+            <div class="welcome__column">
+              <img
+                class="welcome__selfie-img"
+                src="./images/selfie.png"
+                alt=""
+              />
             </div>
-
-            <!-- <p class="section__p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              voluptas quibusdam corrupti id modi deleniti nemo vitae laboriosam
-              nam ducimus? Perferendis mollitia, natus quae libero explicabo aut
-              ratione. Sequi incidunt autem obcaecati ea dolorem omnis illo
-              exercitationem adipisci, excepturi culpa error? Aut inventore
-              minus doloribus magni, sit modi consequatur ipsum.
-            </p> -->
           </div>
         </section>
-        <section id="section-2" class="my-story content__section pg-2">
-          <div class="section-container">
-            <h1 class="section-title content__title">Моя история</h1>
-            <p class="section__p">
+        <section id="my-story" class="my-story content__section">
+          <div class="my-story__container section-container">
+            <h2 class="my-story__title section-title">Моя история</h2>
+            <p class="section-p">
               Мой путь в IT был тернистым и долгим. Сначала был универ по
               верстке, затем степень по теории музыки и классу фортепиано.
               Наконец - карьера длиной в в 10 лет в ювелирной индустрии, где я
@@ -90,11 +86,11 @@
             </p>
           </div>
         </section>
-        <section id="section-3" class="my-skills content__section pg-3">
-          <div class="section-container">
-            <div class="column-1">
-              <h1 class="section-title content__title">Навыки</h1>
-              <p class="section__p">
+        <section id="my-skills" class="my-skills content__section">
+          <div class="my-skills__container section-container">
+            <div class="my-skills__column">
+              <h2 class="section-title content__title">Навыки</h2>
+              <p class="section-p">
                 Весь опыт полученный мною из того что я делал позволяет мне
                 успешно воплощать мои идеи в програмированнии.<br /><br />
 
@@ -104,47 +100,43 @@
                 концентрироваться на деталях в течении многих часов.
               </p>
             </div>
-            <div class="column-2">
-              <div class="skills-wrapper">
-                <div class="shape-1"></div>
-                <div class="shape-2"></div>
-                <div class="skills-container">
-                  <h2>Что и насколько я умею</h2>
-                  <div class="skills">
-                    <div class="details">
-                      <span>HTML</span>
-                      <span>90%</span>
-                    </div>
-                    <div class="bar">
-                      <div id="html-bar"></div>
-                    </div>
+            <div class="my-skills__column">
+              <div class="skill-levels">
+                <h2>Что и насколько я умею</h2>
+                <div class="skill-levels__item">
+                  <div class="skill-levels__details">
+                    <span>HTML</span>
+                    <span>90%</span>
                   </div>
-                  <div class="skills">
-                    <div class="details">
-                      <span>CSS</span>
-                      <span>75%</span>
-                    </div>
-                    <div class="bar">
-                      <div id="css-bar"></div>
-                    </div>
+                  <div class="skill-levels__bar">
+                    <div id="html-bar"></div>
                   </div>
-                  <div class="skills">
-                    <div class="details">
-                      <span>Javascript</span>
-                      <span>30%</span>
-                    </div>
-                    <div class="bar">
-                      <div id="js-bar"></div>
-                    </div>
+                </div>
+                <div class="skill-levels__item">
+                  <div class="skill-levels__details">
+                    <span>CSS</span>
+                    <span>75%</span>
                   </div>
-                  <div class="skills">
-                    <div class="details">
-                      <span>Liquid</span>
-                      <span>50%</span>
-                    </div>
-                    <div class="bar">
-                      <div id="jQuery-bar"></div>
-                    </div>
+                  <div class="skill-levels__bar">
+                    <div id="css-bar"></div>
+                  </div>
+                </div>
+                <div class="skill-levels__item">
+                  <div class="skill-levels__details">
+                    <span>Javascript</span>
+                    <span>30%</span>
+                  </div>
+                  <div class="skill-levels__bar">
+                    <div id="js-bar"></div>
+                  </div>
+                </div>
+                <div class="skill-levels__item">
+                  <div class="skill-levels__details">
+                    <span>Liquid</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="skill-levels__bar">
+                    <div id="jQuery-bar"></div>
                   </div>
                 </div>
               </div>
@@ -152,27 +144,39 @@
           </div>
         </section>
         <section
-          id="section-4"
-          class="portfolio portfolio-bg content__section pg-4"
+          id="portfolio"
+          class="portfolio portfolio-bg content__section animateGradientBG"
         >
-          <div class="section-container">
-             
-
-            <h1 class="section-title content__title">Проекты</h1>
-            <p class="section__p">над которым я работал solo или в команде</p>
+          <div class="portfolio__container section-container">
+            <h2 class="portfolio__title section-title">Проекты</h2>
+            <p class="section-p">над которым я работал solo или в команде</p>
             <div class="portfolio-cards">
-              <div class="portfolio-bg"></div>
               <div class="portfolio-cards__item portfolio-cards__item_hover1">
                 <p class="portfolio-cards__title">Концепт проект для Rimowa</p>
                 <p class="portfolio-cards__desc">
                   Система обработки заказов для известного производителя
-                  чемоданов Rimowa
+                  чемоданов Rimowa. <br />
+                  <br />Проект основан на связке React, Material Ui, Node.js и
+                  PostrgreSQL. Программа предоставляет окно для ввода такой
+                  информации как серийный номер товара, имя и фамилия клиента,
+                  уникальный номер заказа итд. Данные отправляются на бэкэнд,
+                  где хранятся в базе данных. Специалист по чинке чемоданов
+                  имеет доступ к отдельной, защищенной паролем странице, где он
+                  он может просматривать заказы, помечать их как завершенные а
+                  так же скачивать список заказов как excel файл
                 </p>
+                <span class="ellipsis"></span>
               </div>
               <div class="portfolio-cards__item portfolio-cards__item_hover2">
                 <p class="portfolio-cards__title">Jazz Trainer Web App</p>
                 <p class="portfolio-cards__desc">
-                  Онлайн тренажер по джазовой гармонии
+                  Онлайн тренажер по джазовой гармонии.<br /><br />
+
+                  Web-app по практике джазовой гармонии. Задается темп
+                  метронома, составляетя массив из нот, добавляются элементы
+                  муз. аккордов. Под метроном. заданная комбинация аккордов
+                  сменяется через промежуток времени, позволяя игроку
+                  практиковать аккорды на своем инструменте.
                 </p>
               </div>
               <div class="portfolio-cards__item portfolio-cards__item_hover3">
@@ -180,37 +184,58 @@
                   Персональный сайт soltonbaev.com
                 </p>
                 <p class="portfolio-cards__desc">
-                  Мой личный сайт основанный на быстром движке Grav
+                  Мой личный сайт основанный на быстром движке Grav.
+                  <br /><br />
+                  В основу сайта лежит flat file плафторма Grav, позволяющая
+                  загружать markdown файлы и динамически конвертировать их в
+                  HTML страницы. Таким образом обеспечивается быстрота работы
+                  сайта и избежания сложности с редактированием HTML кода.
                 </p>
               </div>
               <div class="portfolio-cards__item portfolio-cards__item_hover4">
                 <p class="portfolio-cards__title">Макеты Figma</p>
                 <p class="portfolio-cards__desc">
-                  Верстка макетов Figma в составе Maker's bootcamp
+                  Верстка макетов Figma в составе Maker's bootcamp <br /><br />
+
+                  Верстка макетов Figma как часть проектов выполненных во время
+                  обучения Maker's Bootcamp. Макеты выполнены используя чистый
+                  HTML и CSS. В планах переверстать используя Bootstrap.
                 </p>
               </div>
               <div class="portfolio-cards__item portfolio-cards__item_hover5">
                 <p class="portfolio-cards__title">Адаптация тем Shopify</p>
                 <p class="portfolio-cards__desc">
                   Адаптация коммерческой темы Shopify 2.0 для ювелирного
-                  магазина alexsoldier.com
+                  магазина alexsoldier.com <br /><br />
+                  Адаптирование Shopfy темы Molla 2.0 для онлайн магазина. Была
+                  полностью кастомизирована landing page, реорганизованны
+                  некоторые элементы в продуктах, написана фича для отображения
+                  количества продуктов в наличии.
                 </p>
               </div>
               <div class="portfolio-cards__item portfolio-cards__item_hover6">
-                <p class="portfolio-cards__title">SEO оптимизация</p>
+                <p class="portfolio-cards__title">
+                  Отображение In Stock для выделенных категорий
+                </p>
                 <p class="portfolio-cards__desc">
-                  SEO оптимизация электронного магазина и доведения его до
-                  GTmetrix 92 балльной оценки
+                  Был написан функционал используя имеющиеся классы в Shopify
+                  теме, а также jQuery и Liquid, чтобы при выделении размеров
+                  или цветов продукта отображалось сообщение, есть ли данный
+                  продукт в наличии.
                 </p>
               </div>
             </div>
+            <div class="portfolio-cards__btns">
+              <button class="btn btn-next">></button>
+              <button class="btn btn-prev"><</button>
+            </div>
           </div>
         </section>
-        <section id="section-5" class="my-hobbies content__section pg-5">
-          <div class="section-container">
+        <section id="my-hobbies" class="my-hobbies content__section">
+          <div class="my-hobbies__container section-container">
             <div>
-              <h1 class="section-title content__title">Увлечения</h1>
-              <p class="section__p">
+              <h2 class="my-hobbies__title section-title">Увлечения</h2>
+              <p class="section-p">
                 Помимо печатания кодов на клавиатуре, у меня есть следующие
                 увлечения:
               </p>
@@ -249,49 +274,130 @@
       </div>
     </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
-      AOS.init();
-
-      // let image = document.getElementsByTagName("img");
-
-      // document.getElementsByClassName(
-      //   ".portfolio-cards__item_hover1"
-      // ).onmouseover = function () {
-      //   image.src = "http://via.placeholder.com/100/00ff00";
-      // };
-
-      // document.getElementsByClassName(
-      //   ".portfolio-cards__item_hover2"
-      // ).onmouseover = function () {
-      //   image.src = "http://via.placeholder.com/100/ff0000";
-      // };
-
-      // document.getElementsByClassName(
-      //   ".portfolio-cards__item_hover3"
-      // ).onmouseover = function () {
-      //   image.src = "http://via.placeholder.com/100/ffa500";
-      // };
-
       $(".portfolio-cards__item_hover1").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg1");
+        $(".portfolio").toggleClass("portfolio-bg1");
       });
       $(".portfolio-cards__item_hover2").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg2");
+        $(".portfolio").toggleClass("portfolio-bg2");
       });
       $(".portfolio-cards__item_hover3").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg3");
+        $(".portfolio").toggleClass("portfolio-bg3");
       });
       $(".portfolio-cards__item_hover4").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg4");
+        $(".portfolio").toggleClass("portfolio-bg4");
       });
       $(".portfolio-cards__item_hover5").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg5");
+        $(".portfolio").toggleClass("portfolio-bg5");
       });
       $(".portfolio-cards__item_hover6").hover(function () {
-        $(".portfolio-bg").toggleClass("portfolio-bg1");
+        $(".portfolio").toggleClass("portfolio-bg6");
+      });
+
+      $(".portfolio-cards__item_hover1").click(function () {
+        $(".portfolio-cards__item_hover1").toggleClass(
+          "portfolio-cards__item_expand"
+        );
+      });
+
+      // const contentContainer = document.querySelector(".content__container");
+      // const contentSection = document.querySelector(".content__section");
+
+      // const observeSection = new IntersectionObserver(
+      //   (entries, observer) => {
+      //     entries.forEach((entry) => {
+      //       if (entry.isIntersecting) {
+      //         entry.target.classList.add("fadeIn");
+      //         alert("Section entered");
+      //       } else {
+      //         entry.target.classList.remove("fadeIn");
+      //         alert("Section left");
+      //       }
+      //     });
+      //   },
+      //   {
+      //     root: contentContainer,
+      //     threshold: 0,
+      //   }
+      // );
+      // observeSection.observe(contentSection);
+
+      // const container = document.querySelector(".content");
+      // const wrappers = document.querySelectorAll(".content__container");
+      // const imgs = document.querySelectorAll(".content__section");
+      // const animClasses = [
+      //   "animateSection",
+      //   "animateSection",
+      //   "animateSection",
+      //   "animateSection",
+      //   "animateSection",
+      // ];
+      // const observer = new IntersectionObserver(
+      //   (entries, observer) => {
+      //     entries.forEach((entry) => {
+      //       const currentIndex = Array.from(wrappers).indexOf(entry.target);
+      //       if (entry.isIntersecting) {
+      //         imgs[currentIndex].classList.add(animClasses[currentIndex]);
+      //       } else {
+      //         if (entry.boundingClientRect.y > 0) {
+      //           imgs[currentIndex].classList.remove(animClasses[currentIndex]);
+      //         }
+      //       }
+      //     });
+      //   },
+      //   {
+      //     root: container,
+      //     threshold: 0.5,
+      //   }
+      // );
+
+      // wrappers.forEach((wrapper) => {
+      //   observer.observe(wrapper);
+      // });
+
+      let observerOptions = {
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
+
+      var observer = new IntersectionObserver(
+        observerCallback,
+        observerOptions
+      );
+
+      function observerCallback(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animateSection");
+          } else {
+            entry.target.classList.remove("animateSection");
+          }
+        });
+      }
+
+      let target = ".section-container";
+      document.querySelectorAll(target).forEach((i) => {
+        if (i) {
+          observer.observe(i);
+        }
+      });
+
+      // $(".ellipsis").append("...");
+
+      function shorten_text_to_parent_size(text_elem) {
+        textContainerHeight = text_elem.parent().height();
+
+        while (text_elem.outerHeight(true) > textContainerHeight) {
+          text_elem.html(function (index, text) {
+            return text.replace(/(?!(<[^>]*>))\W*\s(\S)*$/, "...");
+          });
+        }
+      }
+
+      $(".portfolio-cards__desc").each(function () {
+        shorten_text_to_parent_size($(this));
       });
     </script>
   </body>

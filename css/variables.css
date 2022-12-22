@@ -1,0 +1,10 @@
+:root {
+  --header-font-size: calc(4.2vw + 4.2vh + 2vmin);
+  --desc-font-size: calc(0.8vw + 0.8vh + 0.5vmin);
+  --font-size-p: calc(0.6vw + 0.6vh + 0.6vmin);
+  --font-size-name: calc(1.7vw + 1.7vh + 0.8vmin);
+  --font-size-create: calc(1.2vw + 1.2vh + 1vmin);
+  --font-size-impressions: calc(2.8vw + 2.8vh + 1.2vmin);
+  --font-size-tools: calc(1.1vw + 1.1vh + 1vmin);
+  --line-height: calc(3vh + 3vmin);
+}
