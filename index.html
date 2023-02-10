@@ -1,404 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./css/variables.css" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="./css/variables.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Ибраим Солтонбаев - Онлайн Резюме</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-container">
-        <nav id="nav-bar-spy" class="nav-bar">
-          <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
-            <li class="nav-bar__item"><a href="#welcome"></a></li>
-            <li class="nav-bar__item"><a href="#my-story"></a></li>
-            <li class="nav-bar__item"><a href="#my-skills"></a></li>
-            <li class="nav-bar__item"><a href="#portfolio"></a></li>
-            <li class="nav-bar__item"><a href="#my-hobbies"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="content">
-      <div
-        class="content__container"
-        data-spy="scroll"
-        data-target="#nav-bar-spy"
-      >
-        <section
-          id="welcome"
-          data-aos="zoom-out"
-          class="welcome content__section animateGradientBG"
-        >
-          <div class="welcome__container section-container">
-            <div class="welcome__column welcome__column_txt">
-              <span class="section-title welcome__title typingAnimation">
-                Привет,
-              </span>
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Ибраим Солтонбаев - Онлайн Резюме</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-container">
+            <nav id="nav-bar-spy" class="nav-bar">
+               <ul class="nav-bar-wrapper nav nav-pills nav-stacked nav-pills">
+                  <li class="nav-bar__item"><a href="#welcome"></a></li>
+                  <li class="nav-bar__item"><a href="#my-story"></a></li>
+                  <li class="nav-bar__item"><a href="#my-skills"></a></li>
+                  <li class="nav-bar__item"><a href="#portfolio"></a></li>
+                  <li class="nav-bar__item"><a href="#my-hobbies"></a></li>
+               </ul>
+            </nav>
 
-              <span class="welcome__name fadeIn">меня зовут Ибраим.</span>
-              <span class="welcome__create-wrapper"
-                ><span class="welcome__I fadeIn">Я </span
-                ><span class="welcome__love fadeIn">люблю </span
-                ><span class="welcome__create fadeIn">создавать</span></span
-              >
-
-              <span class="welcome__impressions fadeIn">
-                цифровые <br />
-                впечатления
-              </span>
-              <span class="welcome__tools fadeIn"
-                >используя
-                <span class="welcome__tools_highlight">
-                  CSS, HTML и JS
-                </span></span
-              >
+            <div class="lang-switcher">
+               <img
+                  class="lang-switcher__en lang-switcher__flag"
+                  src="./images/lang-switcher-en.png"
+               />
+               <img
+                  class="lang-switcher__ru lang-switcher__flag lang-switcher__hide"
+                  src="./images/lang-switcher-ru.png"
+               />
             </div>
-            <div class="welcome__column">
-              <img
-                class="welcome__selfie-img"
-                src="./images/selfie.png"
-                alt=""
-              />
+            <div class="scroll-down__wrapper">
+               <div class="scroll-down"></div>
             </div>
-          </div>
-        </section>
-        <section id="my-story" class="my-story content__section">
-          <div class="my-story__container section-container">
-            <h2 class="my-story__title section-title">Моя история</h2>
-            <p class="section-p">
-              Мой путь в IT был тернистым и долгим. Сначала был универ по
-              верстке, затем степень по теории музыки и классу фортепиано.
-              Наконец - карьера длиной в в 10 лет в ювелирной индустрии, где я
-              освоил все аспекты ювелирного мастерства. <br /><br />
-              Но параллельно меня всегда интересовали возможности IT и те
-              преимущества какие он дают. Начал я как веб-мастер для моей
-              компании, где мне приходилось обслуживать сайт, паралельно
-              осваивая CSS, HTML, Liquid Template Language и немного Javascript
-            </p>
-          </div>
-        </section>
-        <section id="my-skills" class="my-skills content__section">
-          <div class="my-skills__container section-container">
-            <div class="my-skills__column">
-              <h2 class="section-title content__title">Навыки</h2>
-              <p class="section-p">
-                Весь опыт полученный мною из того что я делал позволяет мне
-                успешно воплощать мои идеи в програмированнии.<br /><br />
+         </div>
+      </header>
+      <main class="content">
+         <div
+            class="content__container"
+            data-spy="scroll"
+            data-target="#nav-bar-spy"
+         >
+            <section
+               id="welcome"
+               data-aos="zoom-out"
+               class="welcome content__section"
+            >
+               <div
+                  class="welcome__container section-container lang-switcher__ru lang-switcher__hide"
+               >
+                  <div class="welcome__column welcome__column_txt">
+                     <span class="section-title welcome__title typingAnimation">
+                        Привет,
+                     </span>
 
-                Из изучения теории музыки я получил навык работы со сложными
-                абстрактными обьектами. От изучения верстки - чувство пропорции
-                и дизайна. Из ювелирного мастерства - способность
-                концентрироваться на деталях в течении многих часов.
-              </p>
-            </div>
-            <div class="my-skills__column">
-              <div class="skill-levels">
-                <h2>Что и насколько я умею</h2>
-                <div class="skill-levels__item">
-                  <div class="skill-levels__details">
-                    <span>HTML</span>
-                    <span>90%</span>
+                     <span class="welcome__name fadeIn"
+                        >меня зовут Ибраим.</span
+                     >
+                     <span class="welcome__create-wrapper"
+                        ><span class="welcome__I fadeIn">Я </span
+                        ><span class="welcome__love fadeIn">люблю </span
+                        ><span class="welcome__create fadeIn"
+                           >создавать</span
+                        ></span
+                     >
+
+                     <span class="welcome__impressions fadeIn">
+                        цифровые <br />
+                        впечатления
+                     </span>
+                     <span class="welcome__tools fadeIn"
+                        >используя
+                        <span class="welcome__tools_highlight">
+                           CSS, HTML и JS
+                        </span></span
+                     >
                   </div>
-                  <div class="skill-levels__bar">
-                    <div id="html-bar"></div>
+                  <div class="welcome__column">
+                     <img
+                        class="welcome__selfie-img"
+                        src="./images/selfie.png"
+                        alt=""
+                     />
                   </div>
-                </div>
-                <div class="skill-levels__item">
-                  <div class="skill-levels__details">
-                    <span>CSS</span>
-                    <span>75%</span>
+               </div>
+               <div
+                  class="welcome__container section-container lang-switcher__en"
+               >
+                  <div class="welcome__column welcome__column_txt">
+                     <span class="section-title welcome__title typingAnimation">
+                        Greetings,
+                     </span>
+
+                     <span class="welcome__name fadeIn"
+                        >my name is Ibraim.</span
+                     >
+                     <span class="welcome__create-wrapper"
+                        ><span class="welcome__I fadeIn">I </span
+                        ><span class="welcome__love fadeIn">like </span
+                        ><span class="welcome__create fadeIn"
+                           >crafting</span
+                        ></span
+                     >
+
+                     <span class="welcome__impressions fadeIn">
+                        digital <br />
+                        experiences
+                     </span>
+                     <span class="welcome__tools fadeIn"
+                        >using
+                        <span class="welcome__tools_highlight">
+                           modern web technologies
+                        </span></span
+                     >
                   </div>
-                  <div class="skill-levels__bar">
-                    <div id="css-bar"></div>
+                  <div class="welcome__column">
+                     <img
+                        class="welcome__selfie-img"
+                        src="./images/selfie.png"
+                        alt=""
+                     />
                   </div>
-                </div>
-                <div class="skill-levels__item">
-                  <div class="skill-levels__details">
-                    <span>Javascript</span>
-                    <span>30%</span>
+               </div>
+            </section>
+            <section id="my-story" class="my-story content__section">
+               <div
+                  class="my-story__container section-container lang-switcher__ru lang-switcher__hide"
+               >
+                  <h2 class="my-story__title section-title">Моя история</h2>
+                  <p class="section-p">
+                     Мой путь в IT был тернистым и долгим. Сначала был универ по
+                     верстке, затем степень по теории музыки и классу
+                     фортепиано. Наконец - карьера длиной в в 10 лет в ювелирной
+                     индустрии, где я освоил все аспекты ювелирного мастерства.
+                     <br /><br />
+                     Но параллельно меня всегда интересовали возможности IT и те
+                     преимущества какие он дают. Начал я как веб-мастер для моей
+                     компании, где мне приходилось обслуживать сайт, паралельно
+                     осваивая CSS, HTML, Liquid Template Language и немного
+                     Javascript
+                  </p>
+               </div>
+               <div
+                  class="my-story__container section-container lang-switcher__en"
+               >
+                  <h2 class="my-story__title section-title">My story</h2>
+                  <p class="section-p">
+                     My IT story has been rather unorthodox. I studied design
+                     and music theory in college. Then I had a career working as
+                     a bench jeweler spanning over 10 years. I transitioned to
+                     IT by working as a web-master for a few years, learning a
+                     little bit of CSS, HTML, JS and Liquid Template Language on
+                     the job, where my duties were making sure that web-site was
+                     up and running smoothly and up-to-date 24/7.
+                     <br /><br />
+                     Finally, I went to a bootcamp where I had an opportunity to
+                     study a modern front-end tech stack in detail and got
+                     proficient in Native JS, Bootstrap, React, Material UI and
+                     more.
+                  </p>
+               </div>
+            </section>
+            <section id="my-skills" class="my-skills content__section">
+               <div
+                  class="my-skills__container section-container lang-switcher__ru lang-switcher__hide"
+               >
+                  <div class="my-skills__column">
+                     <h2 class="section-title content__title">Навыки</h2>
+                     <p class="section-p">
+                        Весь опыт полученный мною из того что я делал позволяет
+                        мне успешно воплощать мои идеи в програмированнии.<br /><br />
+                     </p>
+                     <ul class="my-skills__list">
+                        <li>
+                           Основные навыки разработки: CSS3+HTML5. Native JS,
+                           Bootstrap, React, Material Ui
+                        </li>
+                        <li>
+                           Второстепенные: jQuery, Liquid Templating Language
+                        </li>
+                        <li>
+                           Смежные по IT: SEO оптимизация, настройка доменов и
+                           хостинга, формулы Excel, работа с платформами
+                           Shopify, Magento, Wordpress, PrestaShop
+                        </li>
+                        <li>Дизайн: Figma и Photoshop</li>
+                     </ul>
                   </div>
-                  <div class="skill-levels__bar">
-                    <div id="js-bar"></div>
+                  <div class="my-skills__column">
+                     <div class="skill-levels">
+                        <h2>Что и насколько я умею</h2>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>HTML and CSS</span>
+                              <span>95%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="html-css-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Native JS</span>
+                              <span>90%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="js-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>React</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="react-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Material UI</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="material-ui-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Bootstrap</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="bootstrap-bar"></div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-                <div class="skill-levels__item">
-                  <div class="skill-levels__details">
-                    <span>Liquid</span>
-                    <span>50%</span>
+               </div>
+               <div
+                  class="my-skills__container section-container lang-switcher__en"
+               >
+                  <div class="my-skills__column">
+                     <h2 class="section-title content__title">Skills</h2>
+                     <p class="section-p">
+                        Everything that I have learned so far helps me turn my
+                        ideas into a code<br /><br />
+                     </p>
+                     <ul class="my-skills__list">
+                        <li>
+                           Primary developer skills: CSS3+HTML5. Native JS,
+                           Bootstrap, React, Material Ui
+                        </li>
+                        <li>Secondary: jQuery, Liquid Templating Language</li>
+                        <li>
+                           Adjacent IT skills: SEO optimization, domain name and
+                           hosting setup, working with Excel formulas,
+                           familiarity with such platforms as Shopify, Magento,
+                           Wordpress, PrestaShop and Grav
+                        </li>
+                        <li>Design skills: Figma и Photoshop</li>
+                     </ul>
                   </div>
-                  <div class="skill-levels__bar">
-                    <div id="jQuery-bar"></div>
+                  <div class="my-skills__column">
+                     <div class="skill-levels">
+                        <h2>Primary skills</h2>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>HTML and CSS</span>
+                              <span>95%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="html-css-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Native JS</span>
+                              <span>90%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="js-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>React</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="react-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Material UI</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="material-ui-bar"></div>
+                           </div>
+                        </div>
+                        <div class="skill-levels__item">
+                           <div class="skill-levels__details">
+                              <span>Bootstrap</span>
+                              <span>75%</span>
+                           </div>
+                           <div class="skill-levels__bar">
+                              <div id="bootstrap-bar"></div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          id="portfolio"
-          class="portfolio portfolio-bg content__section animateGradientBG"
-        >
-          <div class="portfolio__container section-container">
-            <h2 class="portfolio__title section-title">Проекты</h2>
-            <p class="section-p">над которым я работал solo или в команде</p>
-            <div class="portfolio-cards">
-              <div class="portfolio-cards__item portfolio-cards__item_hover1">
-                <p class="portfolio-cards__title">Концепт проект для Rimowa</p>
-                <p class="portfolio-cards__desc">
-                  Система обработки заказов для известного производителя
-                  чемоданов Rimowa. <br />
-                  <br />Проект основан на связке React, Material Ui, Node.js и
-                  PostrgreSQL. Программа предоставляет окно для ввода такой
-                  информации как серийный номер товара, имя и фамилия клиента,
-                  уникальный номер заказа итд. Данные отправляются на бэкэнд,
-                  где хранятся в базе данных. Специалист по чинке чемоданов
-                  имеет доступ к отдельной, защищенной паролем странице, где он
-                  он может просматривать заказы, помечать их как завершенные а
-                  так же скачивать список заказов как excel файл
-                </p>
-                <span class="ellipsis"></span>
-              </div>
-              <div class="portfolio-cards__item portfolio-cards__item_hover2">
-                <p class="portfolio-cards__title">Jazz Trainer Web App</p>
-                <p class="portfolio-cards__desc">
-                  Онлайн тренажер по джазовой гармонии.<br /><br />
+               </div>
+            </section>
+            <section
+               id="portfolio"
+               class="portfolio portfolio-bg content__section animateGradientBG"
+            >
+               <div class="portfolio__container section-container">
+                  <h2 class="portfolio__title section-title">Проекты</h2>
+                  <p class="section-p">
+                     над которым я работал solo или в команде
+                  </p>
+                  <div class="portfolio-cards">
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover1 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">Концепт проекты</p>
+                        <p class="portfolio-cards__desc">
+                           Rimova: Система обработки заказов для известного
+                           производителя чемоданов Rimowa. <br />
+                           <br />Проект основан на связке React, Material Ui,
+                           Node.js и PostrgreSQL. Программа предоставляет окно
+                           для ввода такой информации как серийный номер товара,
+                           имя и фамилия клиента, уникальный номер заказа итд.
+                           Данные отправляются на бэкэнд, где хранятся в базе
+                           данных. Специалист по чинке чемоданов имеет доступ к
+                           отдельной, защищенной паролем странице, где он он
+                           может просматривать заказы, помечать их как
+                           завершенные а так же скачивать список заказов как
+                           excel файл <br /><br />Jazz Trainer Web App Онлайн
+                           тренажер по джазовой гармонии. Web-app по практике
+                           джазовой гармонии. Задается темп метронома,
+                           составляетя массив из нот, добавляются элементы муз.
+                           аккордов. Под метроном. заданная комбинация аккордов
+                           сменяется через промежуток времени, позволяя игроку
+                           практиковать аккорды на своем инструменте.
 
-                  Web-app по практике джазовой гармонии. Задается темп
-                  метронома, составляетя массив из нот, добавляются элементы
-                  муз. аккордов. Под метроном. заданная комбинация аккордов
-                  сменяется через промежуток времени, позволяя игроку
-                  практиковать аккорды на своем инструменте.
-                </p>
-              </div>
-              <div class="portfolio-cards__item portfolio-cards__item_hover3">
-                <p class="portfolio-cards__title">
-                  Персональный сайт soltonbaev.com
-                </p>
-                <p class="portfolio-cards__desc">
-                  Мой личный сайт основанный на быстром движке Grav.
-                  <br /><br />
-                  В основу сайта лежит flat file плафторма Grav, позволяющая
-                  загружать markdown файлы и динамически конвертировать их в
-                  HTML страницы. Таким образом обеспечивается быстрота работы
-                  сайта и избежания сложности с редактированием HTML кода.
-                </p>
-              </div>
-              <div class="portfolio-cards__item portfolio-cards__item_hover4">
-                <p class="portfolio-cards__title">Макеты Figma</p>
-                <p class="portfolio-cards__desc">
-                  Верстка макетов Figma в составе Maker's bootcamp <br /><br />
+                           <br />Верстка макетов Figma в составе Maker's
+                           bootcamp <br /><br />
 
-                  Верстка макетов Figma как часть проектов выполненных во время
-                  обучения Maker's Bootcamp. Макеты выполнены используя чистый
-                  HTML и CSS. В планах переверстать используя Bootstrap.
-                </p>
-              </div>
-              <div class="portfolio-cards__item portfolio-cards__item_hover5">
-                <p class="portfolio-cards__title">Адаптация тем Shopify</p>
-                <p class="portfolio-cards__desc">
-                  Адаптация коммерческой темы Shopify 2.0 для ювелирного
-                  магазина alexsoldier.com <br /><br />
-                  Адаптирование Shopfy темы Molla 2.0 для онлайн магазина. Была
-                  полностью кастомизирована landing page, реорганизованны
-                  некоторые элементы в продуктах, написана фича для отображения
-                  количества продуктов в наличии.
-                </p>
-              </div>
-              <div class="portfolio-cards__item portfolio-cards__item_hover6">
-                <p class="portfolio-cards__title">
-                  Отображение In Stock для выделенных категорий
-                </p>
-                <p class="portfolio-cards__desc">
-                  Был написан функционал используя имеющиеся классы в Shopify
-                  теме, а также jQuery и Liquid, чтобы при выделении размеров
-                  или цветов продукта отображалось сообщение, есть ли данный
-                  продукт в наличии.
-                </p>
-              </div>
-            </div>
-            <div class="portfolio-cards__btns">
-              <button class="btn btn-next">></button>
-              <button class="btn btn-prev"><</button>
-            </div>
-          </div>
-        </section>
-        <section id="my-hobbies" class="my-hobbies content__section">
-          <div class="my-hobbies__container section-container">
-            <div>
-              <h2 class="my-hobbies__title section-title">Увлечения</h2>
-              <p class="section-p">
-                Помимо печатания кодов на клавиатуре, у меня есть следующие
-                увлечения:
-              </p>
-            </div>
-            <div class="my-hobbies__list-wrapper">
-              <div class="my-hobbies__img-wrapper">
-                <img src="./images/cosmonavt.png" alt="" />
-              </div>
-              <ul class="my-hobbies__list">
-                <li class="my-hobbies__item">
-                  Читать книги (в основном non-fiction литературу)
-                </li>
-                <li class="my-hobbies__item">
-                  Слушать и заниматься музыкой (игра на клавиатуре и гитаре
-                </li>
-                <li class="my-hobbies__item">
-                  Читатъ и писать в онлайн ресурс quora.com
-                </li>
-                <li class="my-hobbies__item">Проводить время с дочерью</li>
-                <li class="my-hobbies__item">Делать прогулки на природе</li>
-                <li class="my-hobbies__item">Делать вылазки с друзьями</li>
-              </ul>
-            </div>
-            <footer class="footer">
-              <div class="footer-container">
-                <div>&copy designed and created by Ибраим Солтонбаев</div>
-                <div>Найди меня на <a href="github.com">Github.io</a></div>
-                <div>
-                  Мой официальный сайт
-                  <a href="https://soltonbaev.com">soltonbaev.com</a>
-                </div>
-              </div>
-            </footer>
-          </div>
-        </section>
-      </div>
-    </main>
+                           Верстка макетов Figma как часть проектов выполненных
+                           во время обучения Maker's Bootcamp. Макеты выполнены
+                           используя чистый HTML и CSS. Отображение In Stock для
+                           выделенных категорий Был написан функционал используя
+                           имеющиеся классы в Shopify теме, а также jQuery и
+                           Liquid, чтобы при выделении размеров или цветов
+                           продукта отображалось сообщение, есть ли данный
+                           продукт в наличии.
+                           <br />
+                           Адаптация коммерческой темы Shopify 2.0 для
+                           ювелирного магазина alexsoldier.com <br /><br />
+                           Адаптирование Shopify темы Molla 2.0 для онлайн
+                           магазина. Была полностью кастомизирована landing
+                           page, реорганизованны некоторые элементы в продуктах,
+                           написана фича для отображения количества продуктов в
+                           наличии.
+                        </p>
+                        <span class="ellipsis"></span>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover2 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">Rainbow To-Do</p>
+                        <p class="portfolio-cards__desc">
+                           Тоdo программа написанная на Native JS и Local
+                           Storage Позволяет добавлять несколько листов, удобно
+                           редактировать списки Реализован полноценный CRUD на
+                           основе локального хранилища браузера
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover3 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           Контактная книжка на Native Js и React
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           Контактная книжка с  CRUD на JSON server
+                           <br /><br />
+                           Проект изначально был написан на Native JS, затем
+                           переписан на React. В качестве бэк-энда взят  JSON
+                           server
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover4 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           Социальная сеть Zoocial на Native JS и JSON server
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           Командный хакатон проект, написанный с напарником за
+                           короткий срок. Полноценный  CRUD, фейковая
+                           авторизация, добавление и отображение постов в ленте,
+                           лайки и комментарии.
+                        </p>
+                     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-      $(".portfolio-cards__item_hover1").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg1");
-      });
-      $(".portfolio-cards__item_hover2").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg2");
-      });
-      $(".portfolio-cards__item_hover3").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg3");
-      });
-      $(".portfolio-cards__item_hover4").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg4");
-      });
-      $(".portfolio-cards__item_hover5").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg5");
-      });
-      $(".portfolio-cards__item_hover6").hover(function () {
-        $(".portfolio").toggleClass("portfolio-bg6");
-      });
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover5 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           MKPedia - Фанфик сайт для игры Mortal Kombat на
+                           Reacte и JSON server auth
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           Авторизация с помощью JWT токенов и настройкой прав
+                           на основе JSON server auth. React, CRUD.
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover6 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           Uslugi.kg - сайт для покупки и предоставления бытовых
+                           услуг
+                        </p>
 
-      $(".portfolio-cards__item_hover1").click(function () {
-        $(".portfolio-cards__item_hover1").toggleClass(
-          "portfolio-cards__item_expand"
-        );
-      });
+                        <p class="portfolio-cards__desc">
+                           Командный хакатон проект написанный на базе React в
+                           полноценной связке с Firebase (Firebase Authorization
+                           и Firestore) Из функционала - полноценная
+                           авторизация, CRUD, фильтрация и живой чат
+                        </p>
+                     </div>
+                  </div>
+                  <div class="portfolio-cards__btns">
+                     <button class="btn btn-next">></button>
+                     <button class="btn btn-prev"><</button>
+                  </div>
+               </div>
+            </section>
+            <section id="my-hobbies" class="my-hobbies content__section">
+               <div class="my-hobbies__container section-container">
+                  <div>
+                     <h2 class="my-hobbies__title section-title">Увлечения</h2>
+                     <p class="section-p">
+                        Помимо печатания кодов на клавиатуре, у меня есть
+                        следующие увлечения:
+                     </p>
+                  </div>
+                  <div class="my-hobbies__list-wrapper">
+                     <div class="my-hobbies__img-wrapper">
+                        <img src="./images/cosmonavt.png" alt="" />
+                     </div>
+                     <ul class="my-hobbies__list">
+                        <li class="my-hobbies__item">
+                           Читать книги (в основном non-fiction литературу)
+                        </li>
+                        <li class="my-hobbies__item">
+                           Слушать и заниматься музыкой (игра на клавиатуре и
+                           гитаре
+                        </li>
+                        <li class="my-hobbies__item">
+                           Читатъ и писать в онлайн ресурс quora.com
+                        </li>
+                        <li class="my-hobbies__item">
+                           Проводить время с дочерью
+                        </li>
+                        <li class="my-hobbies__item">
+                           Делать прогулки на природе
+                        </li>
+                        <li class="my-hobbies__item">
+                           Делать вылазки с друзьями
+                        </li>
+                     </ul>
+                  </div>
+                  <footer class="footer">
+                     <div class="footer-container">
+                        <div>
+                           &copy designed and created by Ибраим Солтонбаев
+                        </div>
+                        <div>
+                           Найди меня на <a href="github.com">Github.io</a>
+                        </div>
+                        <div>
+                           Мой официальный сайт
+                           <a href="https://soltonbaev.com">soltonbaev.com</a>
+                        </div>
+                     </div>
+                  </footer>
+               </div>
+            </section>
+         </div>
+      </main>
 
-      // const contentContainer = document.querySelector(".content__container");
-      // const contentSection = document.querySelector(".content__section");
-
-      // const observeSection = new IntersectionObserver(
-      //   (entries, observer) => {
-      //     entries.forEach((entry) => {
-      //       if (entry.isIntersecting) {
-      //         entry.target.classList.add("fadeIn");
-      //         alert("Section entered");
-      //       } else {
-      //         entry.target.classList.remove("fadeIn");
-      //         alert("Section left");
-      //       }
-      //     });
-      //   },
-      //   {
-      //     root: contentContainer,
-      //     threshold: 0,
-      //   }
-      // );
-      // observeSection.observe(contentSection);
-
-      // const container = document.querySelector(".content");
-      // const wrappers = document.querySelectorAll(".content__container");
-      // const imgs = document.querySelectorAll(".content__section");
-      // const animClasses = [
-      //   "animateSection",
-      //   "animateSection",
-      //   "animateSection",
-      //   "animateSection",
-      //   "animateSection",
-      // ];
-      // const observer = new IntersectionObserver(
-      //   (entries, observer) => {
-      //     entries.forEach((entry) => {
-      //       const currentIndex = Array.from(wrappers).indexOf(entry.target);
-      //       if (entry.isIntersecting) {
-      //         imgs[currentIndex].classList.add(animClasses[currentIndex]);
-      //       } else {
-      //         if (entry.boundingClientRect.y > 0) {
-      //           imgs[currentIndex].classList.remove(animClasses[currentIndex]);
-      //         }
-      //       }
-      //     });
-      //   },
-      //   {
-      //     root: container,
-      //     threshold: 0.5,
-      //   }
-      // );
-
-      // wrappers.forEach((wrapper) => {
-      //   observer.observe(wrapper);
-      // });
-
-      let observerOptions = {
-        rootMargin: "0px",
-        threshold: 0.5,
-      };
-
-      var observer = new IntersectionObserver(
-        observerCallback,
-        observerOptions
-      );
-
-      function observerCallback(entries, observer) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animateSection");
-          } else {
-            entry.target.classList.remove("animateSection");
-          }
-        });
-      }
-
-      let target = ".section-container";
-      document.querySelectorAll(target).forEach((i) => {
-        if (i) {
-          observer.observe(i);
-        }
-      });
-
-      // $(".ellipsis").append("...");
-
-      function shorten_text_to_parent_size(text_elem) {
-        textContainerHeight = text_elem.parent().height();
-
-        while (text_elem.outerHeight(true) > textContainerHeight) {
-          text_elem.html(function (index, text) {
-            return text.replace(/(?!(<[^>]*>))\W*\s(\S)*$/, "...");
-          });
-        }
-      }
-
-      $(".portfolio-cards__desc").each(function () {
-        shorten_text_to_parent_size($(this));
-      });
-    </script>
-  </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="./main.js"></script>
+   </body>
 </html>
