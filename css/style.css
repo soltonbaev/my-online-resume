@@ -256,7 +256,8 @@ body {
 
 .my-story .section-p {
    padding: 40px;
-   background-color: rgb(66 46 0 / 60%);
+   border-radius: 8px;
+   background-color: rgba(24, 17, 0, 0.835);
 }
 
 .my-story .section-title {
@@ -493,8 +494,8 @@ body {
 }
 
 /*========================== PORTFOLIO SECTION ==============================*/
-/* .portfolio {
-   justify-content: center;
+.portfolio {
+   /* justify-content: center;
    background-size: 150% 150%;
    background-image: linear-gradient(
       -45deg,
@@ -502,8 +503,9 @@ body {
       rgb(0, 13, 80) 25%,
       rgb(44, 46, 0) 51%,
       rgb(59, 4, 25) 100%
-   );
-} */
+   ); */
+   background: linear-gradient(25deg, black, rgb(0, 13, 80), rgb(59, 4, 25));
+}
 
 .portfolio .section-title,
 .portfolio .section-p {
@@ -527,10 +529,11 @@ body {
 
 .portfolio-cards__desc {
    word-wrap: break-word;
-   overflow: hidden;
+   /* overflow: hidden; */
+   /* white-space: nowrap; */
    text-overflow: ellipsis;
    max-height: 9.6em; /*(Number of lines you want visible) * (line-height) */
-   line-height: 1.2em;
+   /* line-height: 1.2em; */
    font-size: var(--font-size-p);
 }
 /* 
@@ -591,9 +594,9 @@ body {
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   column-gap: 10px;
-   row-gap: 10px;
-   padding: 50px;
+   column-gap: 2rem;
+   row-gap: 2rem;
+   padding: 2rem 2rem 5rem 2rem;
 }
 
 .portfolio-cards__item {
@@ -607,6 +610,7 @@ body {
    position: relative;
    overflow-y: hidden;
    text-overflow: ellipsis;
+   cursor: pointer;
 }
 
 .portfolio-cards__item:hover {
@@ -632,10 +636,29 @@ body {
 /*=============================HOBBIES SECTION=============================*/
 
 .my-hobbies__list {
-   font-size: 2.5rem;
+   font-size: 1.5rem;
    color: white;
+   margin-right: 1rem;
 }
 
+.my-hobbies__pdf {
+   margin-top: 1rem;
+   padding: 1rem 0;
+   /* border: 1px solid fuchsia; */
+   border-radius: 8px;
+}
+
+.my-hobbies__pdf-btn {
+   margin: 1rem 0;
+   background-color: black;
+   color: fuchsia;
+   outline: none;
+   border-color: fuchsia;
+   border-width: 1px;
+   border-style: solid;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+}
 .my-hobbies .section-container {
    display: flex;
    flex-direction: column;
@@ -645,7 +668,7 @@ body {
 
 .my-hobbies__list-wrapper {
    display: flex;
-   align-items: center;
+   /* align-items: center; */
    justify-content: center;
    padding: 0 60px;
 }
@@ -673,7 +696,7 @@ body {
 
 .footer-container div {
    color: aqua;
-   font-size: 2rem;
+   font-size: 1.5rem;
 }
 
 /*=============================RESPONSIVE BREAKPOINTS===============================*/
