@@ -1,7 +1,9 @@
 $('.portfolio-cards__item_hover1').click(function () {
+   console.log(this);
    $('.portfolio').toggleClass('portfolio-bg1');
-   $(this).toggleClass('item-to-vanish');
+   $(this).removeClass('item-to-vanish');
    $('.portfolio-cards').each(function () {
+      // console.log(this);
       $('.item-to-vanish').toggleClass('vanish');
    });
    $(this).toggleClass('item-to-vanish');
@@ -47,65 +49,10 @@ $('.portfolio-cards__item_hover6').click(function () {
    $(this).toggleClass('item-to-vanish');
 });
 
-$('.portfolio-cards__item_hover1').click(function () {
-   $('.portfolio-cards__item_hover1').toggleClass(
-      'portfolio-cards__item_expand'
-   );
-});
-
-// const contentContainer = document.querySelector(".content__container");
-// const contentSection = document.querySelector(".content__section");
-
-// const observeSection = new IntersectionObserver(
-//   (entries, observer) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("fadeIn");
-//         alert("Section entered");
-//       } else {
-//         entry.target.classList.remove("fadeIn");
-//         alert("Section left");
-//       }
-//     });
-//   },
-//   {
-//     root: contentContainer,
-//     threshold: 0,
-//   }
-// );
-// observeSection.observe(contentSection);
-
-// const container = document.querySelector(".content");
-// const wrappers = document.querySelectorAll(".content__container");
-// const imgs = document.querySelectorAll(".content__section");
-// const animClasses = [
-//   "animateSection",
-//   "animateSection",
-//   "animateSection",
-//   "animateSection",
-//   "animateSection",
-// ];
-// const observer = new IntersectionObserver(
-//   (entries, observer) => {
-//     entries.forEach((entry) => {
-//       const currentIndex = Array.from(wrappers).indexOf(entry.target);
-//       if (entry.isIntersecting) {
-//         imgs[currentIndex].classList.add(animClasses[currentIndex]);
-//       } else {
-//         if (entry.boundingClientRect.y > 0) {
-//           imgs[currentIndex].classList.remove(animClasses[currentIndex]);
-//         }
-//       }
-//     });
-//   },
-//   {
-//     root: container,
-//     threshold: 0.5,
-//   }
-// );
-
-// wrappers.forEach((wrapper) => {
-//   observer.observe(wrapper);
+// $('.portfolio-cards__item_hover1').click(function () {
+//    $('.portfolio-cards__item_hover1').toggleClass(
+//       'portfolio-cards__item_expand'
+//    );
 // });
 
 let observerOptions = {
@@ -132,8 +79,6 @@ document.querySelectorAll(target).forEach(i => {
    }
 });
 
-// $(".ellipsis").append("...");
-
 function shorten_text_to_parent_size(text_elem) {
    textContainerHeight = text_elem.parent().height();
 
@@ -150,7 +95,6 @@ $('.portfolio-cards__desc').each(function () {
 
 /*===================== LANGUAGE SWITCHER ===========================*/
 
-// console.log('langAttr', langAttr);
 let langSwitcher = document.getElementsByClassName('lang-switcher')[0];
 
 langSwitcher.addEventListener('click', () => {

@@ -9,13 +9,10 @@ body {
 
 /* Set Scroll Snaps for the container and sections*/
 
-.lang-switcher__hide {
-   display: none !important;
-}
-
 .vanish {
    visibility: hidden;
 }
+
 .content__container {
    margin: 0;
    height: 100vh;
@@ -699,6 +696,15 @@ body {
    font-size: 1.5rem;
 }
 
+.lang-switcher__hide {
+   position: absolute;
+   left: -9999999px;
+   top: -99999999px;
+}
+
+.display-flex {
+   display: flex;
+}
 /*=============================RESPONSIVE BREAKPOINTS===============================*/
 
 /*-------MEDIUM SCREENS--------*/

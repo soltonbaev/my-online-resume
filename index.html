@@ -4,10 +4,11 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
+      <!-- <link
          rel="stylesheet"
          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      />
+      /> -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
       <link rel="stylesheet" href="./css/variables.css" />
 
       <link rel="stylesheet" href="./css/style.css" />
@@ -324,7 +325,9 @@
                id="portfolio"
                class="portfolio portfolio-bg content__section animateGradientBG"
             >
-               <div class="portfolio__container section-container">
+               <div
+                  class="portfolio__container section-container lang-switcher__ru lang-switcher__hide"
+               >
                   <h2 class="portfolio__title section-title">Проекты</h2>
                   <p class="section-p">
                      над которым я работал solo или в команде
@@ -471,8 +474,166 @@
                      </div>
                   </div>
                   <div class="portfolio-cards__btns">
-                     <button class="btn btn-next">></button>
-                     <button class="btn btn-prev"><</button>
+                     <button class="btn btn-next"></button>
+                     <button class="btn btn-prev"></button>
+                  </div>
+               </div>
+               <div
+                  class="portfolio__container section-container lang-switcher__en"
+               >
+                  <h2 class="portfolio__title section-title">My Portfolio</h2>
+                  <p class="section-p">
+                     Projects that I worked on as solo or as a part of the team
+                  </p>
+                  <div class="portfolio-cards">
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover1 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           Conceptual projects
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           These are the projects that I took part in but that
+                           were never fully finished
+                           <br /><br />
+                           (Click on the card to expand)
+                           <br /><br />
+                           <b
+                              >Rimova: Система обработки заказов для известного
+                              производителя чемоданов Rimowa. </b
+                           ><br />Проект основан на связке React, Material Ui,
+                           Node.js и PostrgreSQL. Программа предоставляет окно
+                           для ввода такой информации как серийный номер товара,
+                           имя и фамилия клиента, уникальный номер заказа итд.
+                           Данные отправляются на бэкэнд, где хранятся в базе
+                           данных. Специалист по чинке чемоданов имеет доступ к
+                           отдельной, защищенной паролем странице, где он он
+                           может просматривать заказы, помечать их как
+                           завершенные а так же скачивать список заказов как
+                           excel файл
+
+                           <br /><br /><b
+                              >Jazz Trainer Web App Онлайн тренажер по джазовой
+                              гармонии. </b
+                           >Web-app по практике джазовой гармонии. Задается темп
+                           метронома, составляетя массив из нот, добавляются
+                           элементы муз. аккордов. Под метроном. заданная
+                           комбинация аккордов сменяется через промежуток
+                           времени, позволяя игроку практиковать аккорды на
+                           своем инструменте.
+
+                           <br /><br /><b
+                              >Верстка макетов Figma в составе Maker's bootcamp
+                           </b>
+                           Верстка макетов Figma как часть проектов выполненных
+                           во время обучения Maker's Bootcamp. Макеты выполнены
+                           используя чистый HTML и CSS. Отображение In Stock для
+                           выделенных категорий Был написан функционал используя
+                           имеющиеся классы в Shopify теме, а также jQuery и
+                           Liquid, чтобы при выделении размеров или цветов
+                           продукта отображалось сообщение, есть ли данный
+                           продукт в наличии.
+                           <br /><br />
+                           <b
+                              >Адаптация коммерческой темы Shopify 2.0 для
+                              ювелирного магазина alexsoldier.com</b
+                           >
+
+                           Адаптирование Shopify темы Molla 2.0 для онлайн
+                           магазина. Была полностью кастомизирована landing
+                           page, реорганизованны некоторые элементы в продуктах,
+                           написана фича для отображения количества продуктов в
+                           наличии.
+                        </p>
+                        <span class="ellipsis"></span>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover2 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">Rainbow To-Do</p>
+                        <p class="portfolio-cards__desc">
+                           Тоdo app, coded on Native. Rainbow To-Do allows
+                           creation of multiple to-do lists as well as intuitive
+                           way of editing tasks. Full CRUD is implemented based
+                           on the browser's local storage. <br /><br />
+                           <a
+                              target="_blank"
+                              href="https://contacts-react-sltnbv.web.app/"
+                              >Live demo</a
+                           >
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover3 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">Contact Book</p>
+                        <p class="portfolio-cards__desc">
+                           The app was originally written in Native JS, later
+                           recoded using React Library. Full CRUD functionality
+                           is implemented based on JSON server<br /><br />
+                           <a
+                              target="_blank"
+                              href="https://soltonbaev.com/projects/native-js-todo-app/"
+                              >Live demo</a
+                           >
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover4 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           "Zoocial" the social network
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           A collaborative hackathon project, coded with a
+                           partner on a tight deadline. Full  CRUD, fake
+                           authorization, adding and displaying posts on the
+                           timeline, likes, comments and replies. Project is
+                           based on Native JS и JSON server.
+                           <br /><br />
+                           <a
+                              target="_blank"
+                              href="https://soltonbaev.com/projects/zoocial-network/"
+                              >Live demo</a
+                           >
+                        </p>
+                     </div>
+
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover5 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           MKPedia - fan site for Mortal Kombat
+                        </p>
+                        <p class="portfolio-cards__desc">
+                           The app makes it possible to collect trivia, stories,
+                           character descriptions, images and videos related to
+                           Mortal Kombat game. Project is based on React. Full
+                           CRUD as well as token based JWT authorization is
+                           implemented using JSON server auth.
+                        </p>
+                     </div>
+                     <div
+                        class="portfolio-cards__item portfolio-cards__item_hover6 item-to-vanish"
+                     >
+                        <p class="portfolio-cards__title">
+                           Uslugi.kg - platform for skilled labor workers
+                        </p>
+
+                        <p class="portfolio-cards__desc">
+                           A collaborative hackathon project based on React and
+                           full Firebase integration. Firebase Authorization,
+                           Firestore, filtration and live chat.
+                           <br /><br />
+                           <a target="_blank" href="https://uslugi-kg.web.app/"
+                              >Live сайт проекта</a
+                           >
+                        </p>
+                     </div>
+                  </div>
+                  <div class="portfolio-cards__btns">
+                     <button class="btn btn-next"></button>
+                     <button class="btn btn-prev"></button>
                   </div>
                </div>
             </section>
@@ -607,9 +768,10 @@
             </section>
          </div>
       </main>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <script src="./main.js"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/main.js"></script>
    </body>
 </html>
